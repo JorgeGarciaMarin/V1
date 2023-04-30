@@ -41,7 +41,7 @@ public class PortManagement extends JFrame {
     public PortManagement() {
         int priority=0;
         setContentPane(mainPanel);
-        setTitle("Port Management System");
+        setTitle("Port Management Application");
         setSize(1600,1000);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
