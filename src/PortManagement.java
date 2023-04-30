@@ -96,9 +96,12 @@ public class PortManagement extends JFrame {
                 }
                 catch (InvalidDescriptionException ide){
                     JOptionPane.showMessageDialog(null,ide.getMessage());
+
                 } catch (FullPriorityLevel fpl) {
+                    //Exception thrown in the hub class(inside the jar file)
                     JOptionPane.showMessageDialog(null,fpl);
                 } catch (NoPriorityLevel npl) {
+                    //Exception thrown in the hub class(inside the jar file)
                     JOptionPane.showMessageDialog(null,npl);
                 }
 
@@ -147,6 +150,7 @@ public class PortManagement extends JFrame {
                         taHub.setText("Hub1\n"+hub1.toString()+"\nHub2\n"+hub2.toString()+"\nHub3"+"\n"+hub3.toString());
                     }
                 } catch (NoContainersException ex) {
+                    //Exception thrown in the hub class(inside the jar file)
                     JOptionPane.showMessageDialog(null,ex.getMessage());
                 }
 
