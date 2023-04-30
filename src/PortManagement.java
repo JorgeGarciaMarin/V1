@@ -1,7 +1,5 @@
 import Exceptions.*;
-import Exceptions.FullPriorityLevel;
-import Exceptions.NoContainersException;
-import Exceptions.NoPriorityLevel;
+
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -98,13 +96,12 @@ public class PortManagement extends JFrame {
                 }
                 catch (InvalidDescriptionException ide){
                     JOptionPane.showMessageDialog(null,ide.getMessage());
+                } catch (FullPriorityLevel fpl) {
+                    JOptionPane.showMessageDialog(null,fpl);
+                } catch (NoPriorityLevel npl) {
+                    JOptionPane.showMessageDialog(null,npl);
                 }
-                catch (FullPriorityLevel fpl){
-                    JOptionPane.showMessageDialog(null,fpl.getMessage());
-                }
-                catch (NoPriorityLevel npl){
-                    JOptionPane.showMessageDialog(null,npl.getMessage());
-                }
+
             }
         });
 

@@ -1,7 +1,7 @@
 package Exceptions;
 
 public class InvalidDescriptionException extends Throwable {
-    public InvalidDescriptionException (String message){
+    public InvalidDescriptionException(String message){
         super(message);
     }
 }
