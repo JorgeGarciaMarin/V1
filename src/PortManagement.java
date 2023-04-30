@@ -1,4 +1,7 @@
 import Exceptions.*;
+import Exceptions.FullPriorityLevel;
+import Exceptions.NoContainersException;
+import Exceptions.NoPriorityLevel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -41,12 +44,6 @@ public class PortManagement extends JFrame {
         setTitle("Port Management System");
         setSize(1600,1000);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowClosing(WindowEvent e) {
-                JOptionPane.showMessageDialog(null,"Close?");
-            }
-        });
 
         setVisible(true);
         ButtonGroup group = new ButtonGroup();

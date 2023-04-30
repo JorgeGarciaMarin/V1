@@ -24,8 +24,8 @@ public class Hub {
         int row = -1;
         int column = -1;
         if (toStack.priorityLevel==1) {
-            column = 0;
-            for (int i = 9; i >=0; i--) {
+            for (int i = 9; i>=0; i--) {
+                column=0;
                 if (matrix[i][column] == null) {
                     row = i;
                     matrix[row][column] = toStack;
