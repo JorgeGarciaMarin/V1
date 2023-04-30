@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="PortProject:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/PortProject_jar</output-path>
-    <root id="archive" name="PortProject.jar">
-      <element id="module-output" name="PortProject" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../classes/out/artifacts/classes_jar/classes.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>
