@@ -31,8 +31,6 @@ public class PortManagement extends JFrame  {
     public JComboBox comboBox1;
     private JComboBox comboBox2;
     private JTextField hubNumber;
-    private JButton avgWeightCountryButton;
-    private JTextField textFieldAvg;
     public boolean shown=false;
 
     public PortManagement() {
@@ -41,7 +39,6 @@ public class PortManagement extends JFrame  {
         setTitle("Port Management Application");
         setSize(1600,1000);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
         setVisible(true);
         ButtonGroup group = new ButtonGroup();
         group.add(a1RadioButton);
@@ -178,6 +175,5 @@ public class PortManagement extends JFrame  {
     public static void main(String[] args) throws IOException {
         PortManagement myFrame=new PortManagement();
     }
-
 }
 
