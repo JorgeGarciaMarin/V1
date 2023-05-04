@@ -2,6 +2,7 @@ import Exceptions.*;
 
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
 public class PortManagement extends JFrame  {
@@ -31,10 +32,15 @@ public class PortManagement extends JFrame  {
     public JComboBox comboBox1;
     private JComboBox comboBox2;
     private JTextField hubNumber;
+    private JButton buttonExercise6Button;
     public boolean shown=false;
+    JTextField textFieldForWindow;
 
     public PortManagement() {
         int priority=0;
+        hub1.hubID=1;
+        hub2.hubID=2;
+        hub3.hubID=3;
         setContentPane(mainPanel);
         setTitle("Port Management Application");
         setSize(1600,1000);
@@ -166,6 +172,38 @@ public class PortManagement extends JFrame  {
                 String hubPlan="Hub1\n"+hub1.toString()+"\nHub2\n"+hub2.toString()+"\nHub3"+"\n"+hub3.toString();
                 taHub.setText(hubPlan);
                 shown=true;
+            }
+        });
+        buttonExercise6Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String toDisplay="";
+                int weightToCheck= Integer.parseInt(tfWeight.getText());
+                int hubNum= Integer.parseInt(hubNumber.getText());
+                if(hubNum==1){
+                    toDisplay=hub1.weightLessOrEqual(1,weightToCheck);
+                }
+                else if(hubNum==2){
+                    toDisplay=hub2.weightLessOrEqual(2,weightToCheck);
+                }
+                else if(hubNum==3){
+                    toDisplay=hub3.weightLessOrEqual(3,weightToCheck);
+                }
+                else{
+                    toDisplay="Enter a valid hub number->Between 1 and 3";
+                }
+
+                JFrame window=new JFrame();
+                window.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+                window.setLayout(null);
+                window.setSize(500,500);
+                window.setTitle("Containers with weight less or equal than the one indicated");
+                window.setResizable(false);
+                textFieldForWindow=new JTextField();
+                textFieldForWindow.setBounds(-20,-20,500,500);
+                window.add(textFieldForWindow);
+                window.setVisible(true);
+                textFieldForWindow.setText(toDisplay);
             }
         });
     }
