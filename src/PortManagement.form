@@ -692,6 +692,30 @@
           <text value="ButtonExercise6"/>
         </properties>
       </component>
+      <component id="b5eb1" class="javax.swing.JCheckBox" binding="hub1CheckBox" default-binding="true">
+        <constraints>
+          <grid row="2" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Hub1"/>
+        </properties>
+      </component>
+      <component id="d232d" class="javax.swing.JCheckBox" binding="hub2CheckBox" default-binding="true">
+        <constraints>
+          <grid row="3" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Hub2"/>
+        </properties>
+      </component>
+      <component id="858d9" class="javax.swing.JCheckBox" binding="hub3CheckBox" default-binding="true">
+        <constraints>
+          <grid row="4" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Hub3"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

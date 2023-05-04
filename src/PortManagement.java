@@ -2,7 +2,6 @@ import Exceptions.*;
 
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
 public class PortManagement extends JFrame  {
@@ -33,6 +32,9 @@ public class PortManagement extends JFrame  {
     private JComboBox comboBox2;
     private JTextField hubNumber;
     private JButton buttonExercise6Button;
+    private JCheckBox hub1CheckBox;
+    private JCheckBox hub2CheckBox;
+    private JCheckBox hub3CheckBox;
     public boolean shown=false;
     JTextField textFieldForWindow;
 
@@ -175,18 +177,18 @@ public class PortManagement extends JFrame  {
             }
         });
         buttonExercise6Button.addActionListener(new ActionListener() {
+            //We will perform the method in the hub indicated by the checkboxes
             @Override
             public void actionPerformed(ActionEvent e) {
                 String toDisplay="";
                 int weightToCheck= Integer.parseInt(tfWeight.getText());
-                int hubNum= Integer.parseInt(hubNumber.getText());
-                if(hubNum==1){
+                if(hub1CheckBox.isSelected()){
                     toDisplay=hub1.weightLessOrEqual(1,weightToCheck);
                 }
-                else if(hubNum==2){
+                else if(hub2CheckBox.isSelected()){
                     toDisplay=hub2.weightLessOrEqual(2,weightToCheck);
                 }
-                else if(hubNum==3){
+                else if(hub3CheckBox.isSelected()){
                     toDisplay=hub3.weightLessOrEqual(3,weightToCheck);
                 }
                 else{
