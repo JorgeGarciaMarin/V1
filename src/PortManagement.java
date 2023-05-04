@@ -202,7 +202,7 @@ public class PortManagement extends JFrame  {
                 window.setTitle("Containers with weight less or equal than the one indicated");
                 window.setResizable(false);
                 textFieldForWindow=new JTextField();
-                textFieldForWindow.setBounds(-20,-20,500,500);
+                textFieldForWindow.setBounds(0,0,500,500);
                 window.add(textFieldForWindow);
                 window.setVisible(true);
                 textFieldForWindow.setText(toDisplay);
