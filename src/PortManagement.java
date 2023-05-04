@@ -199,7 +199,7 @@ public class PortManagement extends JFrame  {
                 window.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
                 window.setLayout(null);
                 window.setSize(500,500);
-                window.setTitle("Containers with weight less or equal than the one indicated");
+                window.setTitle("Containers with weight less or equal than the indicated one");
                 window.setResizable(false);
                 textFieldForWindow=new JTextField();
                 textFieldForWindow.setBounds(0,0,500,500);
